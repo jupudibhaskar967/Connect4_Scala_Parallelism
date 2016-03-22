@@ -1,0 +1,27 @@
+This is implementing Connect4 game using Scala Actor system.
+
+Actor system is used to implement Parallelism.
+
+Here in the code, number of workers denotes the number of cores and number of threads used are 7 as size of the board is 7*7.
+
+Implemented using minimax algorithm with alpha-beta pruning.
+
+Here, in minimax the depth search space is exponential and we have used a depth of 8.
+
+Depth indicates the difficulty of the game. More depth indicates more difficulty.
+
+Used Actor system to induce parallelism in implementing minimax recursive algorithm.
+
+Here the size of the board and depth are configurable.
+
+
+How to Play:
+scalac Play_main.scala Utility.scala
+scala Play_main
+
+
+Performance analysis:
+This code performs the best on a system with 7 cores and with depth of 10.
+
+
+Refer to the Final_Report.pdf for more details.
